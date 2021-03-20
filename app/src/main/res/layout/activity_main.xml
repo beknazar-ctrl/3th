@@ -5,20 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/photo">
+    android:background="@drawable/geektech">
 
     <TextView
         android:id="@+id/text1"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добро пожаловать!"
-        android:textColor="#FB0000"
-        android:textSize="40sp"
+        android:fontFamily="casual"
+        android:text="Добро пожаловать в      GEEKTECH"
+        android:textColor="#FFE500"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:fontFamily="cursive"/>
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

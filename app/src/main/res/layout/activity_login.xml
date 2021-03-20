@@ -47,8 +47,10 @@
         android:id="@+id/edit1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#4EFFFFFF"
         android:hint="Ведите ваш почта"
-        android:textColorHint="#FFFFFF"
+        android:padding="18dp"
+        android:textColorHint="#000000"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,14 +60,16 @@
 
 
         app:layout_constraintTop_toBottomOf="@id/text3"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.057" />
 
     <EditText
         android:id="@+id/edit2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ведите пороль"
-        android:textColorHint="#FFFFFF"
+        android:textColorHint="#000000"
+        android:background="#36FFFFFF"
+        android:padding="18dp"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
