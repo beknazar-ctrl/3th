@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (notEmpty) {
                     if (!TextUtils.isEmpty(editText1.getText().toString()) && !TextUtils.isEmpty(editText2.getText().toString())) {
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, Calculator.class);
                         startActivity(intent);
                     }
                 } else {
@@ -75,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
     }
 
 }
