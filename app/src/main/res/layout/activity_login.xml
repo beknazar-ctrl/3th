@@ -13,7 +13,7 @@
         android:text="Wellcom to Calculator!"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,11 +24,11 @@
         android:layout_height="wrap_content"
         android:text="Выполнить вход"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1"
-        app:layout_constraintVertical_bias="0.065"
+
         />
     <TextView
         android:id="@+id/text3"
@@ -36,11 +36,11 @@
         android:layout_height="wrap_content"
         android:text="или зарегистрируйтесь"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edit1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text2"
-        app:layout_constraintVertical_bias="0.065"
+
         />
 
     <EditText
@@ -53,38 +53,27 @@
         android:textColorHint="#000000"
         android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edit2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text3" />
 
-
-        app:layout_constraintTop_toBottomOf="@id/text3"
-        app:layout_constraintVertical_bias="0.057" />
 
     <EditText
         android:id="@+id/edit2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ведите пороль"
-        android:textColorHint="#000000"
         android:background="#36FFFFFF"
+        android:hint="Ведите пороль"
+        android:inputType="textPassword"
         android:padding="18dp"
+        android:textColorHint="#000000"
         android:textSize="25dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_log"
         app:layout_constraintEnd_toEndOf="parent"
-        android:inputType="textPassword"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-
-
-        app:layout_constraintTop_toBottomOf="@id/text3"
-        app:layout_constraintVertical_bias="0.514" />
-
-
-
-
+        app:layout_constraintTop_toBottomOf="@id/edit1" />
 
     <Button
         android:id="@+id/button_log"
@@ -94,12 +83,10 @@
         android:text="войти"
         android:enabled="false"
         android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/regitoration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit2"
-
-        app:layout_constraintVertical_bias="0.065" />
+        app:layout_constraintTop_toBottomOf="@+id/edit2" />
 
     <TextView
         android:id="@+id/text4"
@@ -109,13 +96,13 @@
         android:text="забыли пороль?"
         android:textColor="#FFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/regitoration"
         app:layout_constraintTop_toBottomOf="@+id/button_log"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
     <TextView
+        android:id="@+id/regitoration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -123,8 +110,7 @@
         android:textColor="#3498db"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/text4"
-        app:layout_constraintVertical_bias="0.308"
+        app:layout_constraintStart_toEndOf="@id/text4"
         app:layout_constraintTop_toBottomOf="@id/button_log"
 
         />

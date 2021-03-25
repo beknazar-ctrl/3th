@@ -55,7 +55,7 @@
         android:id="@+id/key"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/GEEKTECH"
+        app:layout_constraintBottom_toTopOf="@+id/geektech"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtThird">
@@ -64,22 +64,29 @@
 
             <Button
                 android:id="@+id/first"
-
+                android:textColor="@color/btnText"
                 android:text="1"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button" />
 
             <Button
                 android:id="@+id/second"
                 android:textSize="50dp"
-                android:text="2" />
+                android:text="2"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:text="3"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:text="*"
-                android:textSize="50dp" />
+                android:background="@color/button"
+                android:textSize="50dp"
+                android:textColor="@color/btnText" />
 
 
         </TableRow>
@@ -88,19 +95,27 @@
 
             <Button
                 android:text="4"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:text="5"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:text="6"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:text="/"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
 
         </TableRow>
@@ -110,19 +125,27 @@
 
             <Button
                 android:text="7"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:text="8"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:text="9"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:text="-"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
 
         </TableRow>
@@ -132,29 +155,35 @@
 
             <Button
                 android:text="0"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:text=","
-                android:textSize="50dp" />
-
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:id="@+id/plus"
-
+                android:background="@color/button"
                 android:text="+"
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:textColor="@color/btnText" />
 
             <Button
                 android:id="@+id/equally"
                 android:text="="
-                android:textSize="50dp" />
+                android:textSize="50dp"
+                android:background="@color/button"
+                android:textColor="@color/btnText" />
         </TableRow>
 
     </TableLayout>
 
     <TextView
-        android:id="@+id/GEEKTECH"
+        android:id="@+id/geektech"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/GEEKTECH"

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,7 @@ public class Calculator extends AppCompatActivity {
     Button b1, b2;
     Button plus;
     Button equally;
+    TextView geektech;
     int number;
     int second;
 
@@ -32,6 +34,7 @@ public class Calculator extends AppCompatActivity {
         b2 = findViewById(R.id.second);
         plus = findViewById(R.id.plus);
         equally = findViewById(R.id.equally);
+        geektech = findViewById(R.id.geektech);
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,9 +74,19 @@ public class Calculator extends AppCompatActivity {
 
             }
         });
+        geektech.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (!TextUtils.isEmpty(geektech.getText().toString()) && !TextUtils.isEmpty(geektech.getText().toString())) {
+                    Intent intent = new Intent(Calculator.this, Main2Activity.class);
+                    startActivity(intent);
+                }
 
 
+            }
+
+
+        });
     }
-
-
 }
